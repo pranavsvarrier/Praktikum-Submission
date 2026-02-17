@@ -116,7 +116,7 @@ def train_paper_model(emotion='valence'):
         offline_transform=None,
         online_transform=transforms.Compose([
             transforms.ToTensor(),
-            ReorderChannels()  # ✅ Reorder channels anti-clockwise
+            ReorderChannels()  # Reorder channels anti-clockwise
         ]),
         label_transform=transforms.Compose([
             transforms.Select(emotion),
