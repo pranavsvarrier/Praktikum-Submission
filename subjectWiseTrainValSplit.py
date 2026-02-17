@@ -22,7 +22,7 @@ def trial_level_64_16_20_split(dataset, seed=42):
         test_size=0.20,
         random_state=seed,
         shuffle=True,
-        stratify=all_labels  # ✅ Stratify by class labels
+        stratify=all_labels 
     )
     
     # Get labels for train+val
